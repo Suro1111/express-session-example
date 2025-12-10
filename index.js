@@ -5,7 +5,7 @@ const app = express();
 
 app.use(
   session({
-    secret: "cvkdjfkhdwihdiqhdhisswsw",
+    secret: process.env.MY_COOKIE,
     cookie: {
       maxAge: 60000,
     },
